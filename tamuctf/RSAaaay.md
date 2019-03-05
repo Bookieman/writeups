@@ -4,9 +4,9 @@ difficulty: easy
 ## Description
 This challenge is pretty much the basics of RSA, and uses the vulnerability of the "weak exponent".
 We are given:
-  - A ciphertext : "906851 991083 1780304 2380434 438490 
+  - A ciphertext : `"906851 991083 1780304 2380434 438490 
                     356019 921472 822283 817856 556932 2102538 
-                    2501908 2211404 991083 1562919 38268"
+                    2501908 2211404 991083 1562919 38268"`
   - A key : (2531257, 43)
       - e = 43
       - n = 2531257
@@ -29,7 +29,7 @@ for i in "906851 991083 1780304 2380434 438490 356019 921472 822283 817856 55693
   result.append( int(i) ** d % n)
 print(result)
 ```
-we get result = [103, 105103, 101109, 12383, 97118, 97103, 10195, 83105, 12095, 70108, 121105, 110103, 9584, 105103, 101114, 115125]
+we get result = `[103, 105103, 101109, 12383, 97118, 97103, 10195, 83105, 12095, 70108, 121105, 110103, 9584, 105103, 101114, 115125]`
 splitting these values and converting to characters with chr() will give us the following flag:
 
-gigem{Savage_Six_Flying_Tigers}
+`gigem{Savage_Six_Flying_Tigers}`
