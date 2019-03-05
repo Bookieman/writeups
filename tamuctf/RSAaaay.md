@@ -11,6 +11,8 @@ We are given:
       - e = 43
       - n = 2531257
  
+## Solving
+
 First off, we see that the modulus (2531257) is very weak, so we go to factordb.com and retrieve p, q and phi(N):
   - p = 509
   - q = 4973
